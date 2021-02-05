@@ -156,10 +156,11 @@ def get_closed_ticket_count(start: datetime, end: datetime) -> int:
     return data["total"]
 
 
-START = isoparse("2020-02-01T08:00:00Z")
-END = isoparse("2021-02-01T08:00:00Z")
+START = isoparse("2020-02-01T00:00:00Z")
+END = isoparse("2021-02-01T00:00:00Z")
 
-print(f"Comments: {len(get_all_comments(START, END))}")
+print(f"Calculating stats between {START.date()} and {END.date()}...")
+print(f"PR comments left: {len(get_all_comments(START, END))}")
 print(f"Merged PRs: {get_merged_pr_count(START, END)}")
 print(f"Tickets closed: {get_closed_ticket_count(START, END)}")
 
