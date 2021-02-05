@@ -161,6 +161,6 @@ END = isoparse("2021-02-01T00:00:00Z")
 
 print(f"Calculating stats between {START.date()} and {END.date()}...")
 print(f"PR comments left: {len(get_all_comments(START, END))}")
-print(f"Merged PRs: {get_merged_pr_count(START, END)}")
+print(f"PRs merged: {get_merged_pr_count(START, END)}")
 print(f"Tickets closed: {get_closed_ticket_count(START, END)}")
 

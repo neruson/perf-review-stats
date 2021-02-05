@@ -2,7 +2,7 @@
 > python stats.py
 Calculating stats between 2020-02-01 and 2021-02-01...
 PR comments left: 89
-Merged PRs: 267
+PRs merged: 267
 Tickets closed: 173
 ```
 
